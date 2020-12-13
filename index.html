@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fullstack.net</title>
+  <title>Sapporo Ramen SORA</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 
 <body>
-  <nav class="navbar has-shadow is-white">
+  <!-- navbar start -->
+  <nav class="navbar is-white has-shadow is-white is-fixed-top">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <img src="assets/The_Legend_of_Zelda_-_Sheikah_Symbol.svg" alt="" width="50" height="50">
+          <img src="assets/cropped-logo-login-1.png" alt="Sora logo" width="60" height="50">
         </a>
         <a class="navbar-burger" id="burger">
           <span></span>
@@ -23,50 +24,270 @@
       </div>
       <div class="navbar-menu" id="nav-links">
         <div class="navbar-end is-size-7">
-          <a href="" class="navbar-item">home</a>
-          <a href="" class="navbar-item">About</a>
+          <a href="" class="navbar-item">Sapporo Ramen SORA</a>
+          <a href="" class="navbar-item">menu</a>
           <a href="" class="navbar-item">about </a>
         </div>
       </div>
     </div>
   </nav>
+  <!-- navbar end -->
 
-  <div class="section container pt-3">
-    <nav class="breadcrumb has-arrow-separator is-size-7">
-      <ul>
-        <li><a class="has-text-grey" href="#">Bulma</a></li>
-        <li><a class="has-text-grey" href="#">Documentation</a></li>
-        <li><a class="has-text-grey" href="#">Components</a></li>
-        <li class="has-text-grey is-active"><a href="#">Breadcrumb</a></li>
-      </ul>
-    </nav>
-  </div>
-
+  <!-- main start -->
   <div class="section">
     <div class="container">
-      <div class="columns is-vcentered">
+      <div class="columns is-vcentered is-multiline pt-6">
 
-        <div class="column is-3">
-          <h2 class="is-size-2 title">Bijzetvarken</h2>
-          <h3 class="is-size-3 subtitle">Yeuntje knorrr</h3>
+        <div class="column is-6-tablet is-3-desktop">
+          <h2 class="is-size-2-desktop title has-text-danger-dark">Shoyu Ramen</h2>
+          <h5 class="is-size-5-desktop subtitle">醤油ラーメン</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sunt fugit necessitatibus molestias mollitia
             libero praesentium labore voluptas reprehenderit officia!</p>
         </div>
 
-        <div class="column is-5">
-          <img
-            src="assets/SP016-Werkwaardig-sidepig-olivegreen-bijzettafel-bijzetvarken-humor-functioneel-1-1000x0-c-default.jpg"
-            alt="" class="px-6">
+        <div class="column is-5-deskop has-text-centered">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/Sora_02s-1024x683.jpg" alt="Shoyu Ramen">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="column is-4">
-          <div class="is-size-3 mb-3">€179,00</div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, tempore!</p>
+        <div class="column is-10-tablet is-4-desktop">
+          <h3 class="is-size-3 mb-3">€13.50</h3>
+          <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, tempore!</p>
+          <form action="">
+            <div class="field mb-5">
+              <div class="control">
+                <div class="select is-dark is-small">
+                  <select>
+                    <option>Small (250g)</option>
+                    <option>Large (500g)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button class="button is-small">Add to Cart</button>
+          </form>
         </div>
 
       </div>
     </div>
   </div>
+  <!-- main end -->
+
+  <!-- tabs start -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+
+        <div class="column is-7-tablet">
+          <div class="tabs is-boxed">
+            <ul class="is-dark">
+              <li class="is-active" data-target="product-details"><a>POINT CARD</a></li>
+              <li data-target="delivery-information">
+                <a>TANTAN RAMEN</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="px-2" id="tab-content">
+            <div id="product-details">
+              <h5 class="is-size-5 title">POINT CARD</h5>
+              <p>We wanted to thank those of you who visit us repeatedly, so we’ve made this point card!Eat ramen,
+                collect
+                stamps, and get a free ramen …</p>
+              <div class="my-3 is-size-7">
+                <!-- ? -->
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+
+            <div id="delivery-information" class="is-hidden">
+              <h5 class="is-size-5 title">TANTAN RAMEN</h5>
+              <p>Unique mixture of sesame paste, chilli oil, and shrimp paste, SORA’s original TANTAN MEN is our current
+                seasonal ramen, and it’s being one of the …</p>
+              <div class="my-3 is-size-7">
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="column is-5-tablet">
+          <div class="message">
+            <div class="message-header">
+              <p>Bekijk wat gasten erover zeggen:</p>
+            </div>
+            <div class="message-body">
+              <h5 class="is-size-5 title mb-2">Favoriete Ramen zaak in Amsterdam</h5>
+              <p> De ramen hier is altijd goed, veel opties, ook voor vegetariers. Klein authentiek zaakje, goede
+                bediening.
+              </p>
+
+              <time datetime="2016-1-1" class="my-3 is-size-7">11:09 PM - 1 Jan 2016</time>
+              <div class="has-text-centered mt-3">
+                <button class="button is-small" id="signup">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- tabs end -->
+
+  <!-- cards start -->
+  <section class="section is-hidden-mobile">
+    <div class="container">
+      <h4 class="title is-size-4 has-text-centered">Related Products</h4>
+      <div class="columns is-8 is-variable is-centered">
+
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/Sora_09s-1-1024x683.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content pb-2">
+              <p>€13.50</p>
+              <p class="title is-size-5">Gyoza</p>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="" class="has-text-grey">View</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/IMG_7958-HDR-1024x683.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content pb-2">
+              <p>€13.50</p>
+              <p class="title is-size-5">Menma Shoyu Ramen</p>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="" class="has-text-grey">View</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/Sora_42s-1024x683.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content pb-2">
+              <p>€13.50</p>
+              <p class="title is-size-5">Noodle from Japan</p>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="" class="has-text-grey">View</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- cards end -->
+
+  <!-- modal start -->
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white p-5">
+      <h4 class="title is-size-4 mb-4">Join the Club</h4>
+      <form>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="Email" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="mt-5 has-text-centered">
+          <button class="button is-warning is-small">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- modal end -->
+
+  <!-- footer start -->
+  <footer class="footer py-3">
+    <div class="container">
+      <div class="content">
+        <div class="columns is-centered">
+
+          <div class="column is-5">
+            <h6 class="is-size-6 has-text-danger">SORA -DE PIJP-</h6>
+            <h6 class="is-size-6 my-0">Monday to Friday</h6>
+            <p class="my-0"> Lunch 12:00-15:30(Last order 15:00)／Dinner 17:30-21:30(Last order
+              21:00)
+            </p>
+            <h6 class="is-size-6 my-0">Saturday and Sunday</h6>
+            <p>12:00-21:30(Last order 21:00)</p>
+            <h6 class="is-size-6 my-0">Ceintuurbaan 49H, 1072 ET Amsterdam the Netherlands
+            </h6>
+            <p>Call : +31 (0)20 664 4396</p>
+          </div>
+
+          <div class="column is-5">
+            <h6 class="is-size-6 has-text-danger">SORA -AMSTERDAM WEST-</h6>
+            <h6 class="is-size-6 my-0">Monday to Friday</h6>
+            <p class="my-0">Lunch 12:00-15:30(Last order 15:00)／Dinner 17:30-21:30(Last order
+              21:00)
+            </p>
+            <h6 class="is-size-6 my-0">Saturday and Sunday</h6>
+            <p>12:00-21:30(Last order 21:00)</p>
+            <h6 class="is-size-6 my-0">Marco Polostraat 223H, 1056 DL Amsterdam
+            </h6>
+            <p>Call : +31 (0)20 239 0780</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
 
   <script src="index.js"></script>
 </body>
